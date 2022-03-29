@@ -4,18 +4,19 @@ body {
 }
 header {
     padding: auto;
-    background-color: darkcyan;
+    background-color: rgb(39, 86, 124);
 }
 header h1 {
     font-weight: bold;
     font-size: 26px;
-    color: white;
+    color: rgb(155, 187, 207);
     margin: 0;
     display: inline;
 }
 header a {
     text-decoration: none;
-    color: white;
+    color: rgb(155, 187, 207)
+    ;
 }
 header nav {
     float: right;
@@ -33,4 +34,19 @@ header nav ul li a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.hero {
+    background-image: url(../images/hero.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero h2 {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 26px;
+    margin: 0;
+    color: rgb(155, 187, 207);
 }
