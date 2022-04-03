@@ -1,22 +1,25 @@
 body {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4d4d4;
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
+
 header {
-    padding: auto;
-    background-color: rgb(39, 86, 124);
+    padding: 20px 35px;
+    background-color: #77e8f5;
 }
 header h1 {
     font-weight: bold;
-    font-size: 26px;
-    color: rgb(155, 187, 207);
+    font-size: 36px;
+    color: #3d3f3f;
     margin: 0;
     display: inline;
 }
+header a.active {
+    background-color: #d4d4d4;
+}
 header a {
-    text-decoration: none;
-    color: rgb(155, 187, 207)
-    ;
+    text-decoration: underline;
+    color: #3d3f3f;
 }
 header nav {
     float: right;
@@ -25,28 +28,47 @@ header nav {
 header nav ul li {
     display: inline;
 }
+
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 22px;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+section {
+    padding: 60px;
+}
+
 .hero {
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero_img.jpg);
     height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.hero h2 {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 26px;
+.hero figure {
+    border: 2px solid #77e8f5;
+    max-width: 250px;
+    justify-content: flex-end;
+    
+}
+
+footer {
+    background: #77e8f5;
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2 {
+    display: inline;
+    color: #3d3f3f;
+    font-size: 30px;
     margin: 0;
-    color: rgb(155, 187, 207);
-}
+    line-height: 1.5;
+    text-align: right;
+  }
